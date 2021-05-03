@@ -6,7 +6,7 @@ export default class Stats extends Component {
     centeredStyle = {
         display:"flex",
         alignItems: "center",
-        justifyContent:"center"
+        justifyContent:"center",
     }
 
     render() {

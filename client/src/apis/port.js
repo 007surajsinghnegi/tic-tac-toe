@@ -1,5 +1,5 @@
 import io from 'socket.io-client';
 
-const port = "/"; //need to change it before deployment
+const port ="https://git.heroku.com/tic-tac-toe-321.git" ; 
 const socket = io(port);
 export default socket;

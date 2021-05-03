@@ -22,7 +22,6 @@ export default class joinSession extends Component {
         if(this.state["code"] !== "" && this.state["name"] !== "" ){
             socket.emit("join-session",this.state.code,this.state.name);
         }
-        // TODO: else give a prompt
     }
 
     componentDidMount(){

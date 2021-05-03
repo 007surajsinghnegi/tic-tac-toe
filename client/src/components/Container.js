@@ -41,29 +41,18 @@ export default class Container extends Component {
         socket.on("session-created",(name,code)=>{this.setState({
             landing:false,
             lobby:true,
-            
-
             pl_one_name: name,
             code:code,
-            isPlayer_one:true //if you created the session, you are player one. 
-
+            isPlayer_one:true 
         })})
 
         socket.on("valid-code",(gameState)=>{
-            
-            
-            
             this.setState({
                 lobby_waiting: false,
                 landing:false,
                 lobby:true,
-            
                 gameState: gameState
-
            })
-           
-            
-           
         })
     }
     
@@ -82,6 +71,3 @@ export default class Container extends Component {
         )
     }
 }
-
-
-//note to self: constructor method in a class is called after calling other methods and setting attributes 

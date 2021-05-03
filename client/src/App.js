@@ -13,15 +13,10 @@ import {motion,AnimatePresence} from 'framer-motion';
 import Container from './components/Container';
 import Stats from './components/Stats';
 
-//text selection: shift + left/right keys
-//block moving: ctrl + [/]
 
 function App() {
   
-  
-
-  return (
-    
+  return (  
     <Container/>
   );
 }

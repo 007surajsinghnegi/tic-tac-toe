@@ -157,28 +157,18 @@ class Session{
                 this.gameState.grid = [0,0,0,0,0,0,0,0,0];
                 this.gameState.p1_turn = !this.gameState.p1_turn;
                 return "tie";
-            }
-            
-
-            
+            }      
         }
-
         return "ongoing";
-    
-    
-
-        
     }
     
 
     isFullBoard =()=> {
         for(let i=0;i<9;i++){
             if(this.gameState.grid[i] === 0){
-                
                 return false;
             }
         }
-    
         return true;
     }
         

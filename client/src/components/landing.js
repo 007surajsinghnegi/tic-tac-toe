@@ -19,7 +19,7 @@ const Landing = props => {
     return (
         <AnimatePresence>
         <motion.div className="landing" initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}}>
-            <h1 className="title">O Tic-Tac-Toe</h1>
+            <h1 className="title">Tic-Tac-Toe</h1>
             
                 <Button className="session-btn" color="primary" size="md" onClick={create_toggle} >Create Session</Button>
                 <Modal isOpen={modal_create} toggle={create_toggle}>
@@ -37,11 +37,7 @@ const Landing = props => {
                     <ModalBody>
                         <JoinSession/>
                     </ModalBody>
-                </Modal>
-                
-                <NavLink href="https://github.com/Ta7ar"><Button>Github</Button></NavLink>
-                
-            
+                </Modal>        
         </motion.div>
         </AnimatePresence>
     )

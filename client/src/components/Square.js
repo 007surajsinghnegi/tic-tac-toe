@@ -5,7 +5,7 @@ import socket from './../apis/port';
  export default class Square extends Component{
 
 
-    renderValue = (val) => { //converts a value index to a string
+    renderValue = (val) => {
         if (val === "1"){
             //return "✖"
             return "✕"
@@ -37,7 +37,6 @@ import socket from './../apis/port';
 
     render(){
         return(
-        
             <div className="square-inner" onClick={this.playerMove}>
                 {this.renderValue(this.props.val)}
             </div>
